@@ -21,3 +21,6 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 ## Chapter 3
 
 * `double` and `int` are subtypes of `num`
+* conversions need to be explicit, that is why there is for example `.toInt()` and `.toDouble()` methods
+* `num` type does not have `isEven` method
+* you can't cast `double` to `int` and vice versa - you should use the dedicated methods for conversion
