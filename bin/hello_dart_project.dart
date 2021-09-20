@@ -1,15 +1,5 @@
 void main(List<String> arguments) {
-  // Just a comment for testing
-
-  /* 
-    Block comment
-  */
-
-  /// Documentation comment
-
-  /**
-   * Documentation block comment
-   */
-
-  print('Hello world!'); // a statement
-} // complex statement
+  print(22 / 7); // regular division that gives 3.14...
+  print(22 ~/ 7); // integral division that gives 3
+  print('Hello world!');
+}
