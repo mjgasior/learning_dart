@@ -14,5 +14,10 @@ void main(List<String> arguments) {
     print('The base is even!');
   }
 
-  print('Hello world!');
+  dynamic a = 10;
+  a = 'this is dynamic';
+  print(a);
+
+  var b = "this is string, but not dynamic";
+  print(b);
 }
