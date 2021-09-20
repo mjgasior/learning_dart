@@ -17,3 +17,7 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * everything derives from `Object` so you can call `3.1423.round()` or `42.isEven` on numbers
 * there is `dynamic` type that can get everything (but it is not recommended to be used)
 * `var` type assigns the type based on what value is being assigned to the variable
+
+## Chapter 3
+
+* `double` and `int` are subtypes of `num`
