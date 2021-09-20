@@ -12,6 +12,8 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 
 * comments work as usually with `//` and `/* ... */`
 * Dart also has documentation comments using `///` and `/** * */` notation
+* truncating division cuts the cuts out the rest after division - its operator is `~/`
+* Dart has a math library with most popular functions and consts like *sin* or *pi* value
 * everything derives from `Object` so you can call `3.1423.round()` or `42.isEven` on numbers
 * there is `dynamic` type that can get everything (but it is not recommended to be used)
 * `var` type assigns the type based on what value is being assigned to the variable

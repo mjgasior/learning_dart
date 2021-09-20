@@ -20,4 +20,12 @@ void main(List<String> arguments) {
 
   var b = "this is string, but not dynamic";
   print(b);
+
+  const c = "this is a constant";
+  const int d = 10;
+  print(c);
+  print(d);
+
+  final runtimeConstant = DateTime.now().hour;
+  print(runtimeConstant);
 }
