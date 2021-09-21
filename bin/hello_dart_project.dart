@@ -1,3 +1,5 @@
+import 'package:characters/characters.dart';
+
 void main(List<String> arguments) {
   const notSurrogatePair = 'a';
   print(notSurrogatePair.codeUnits);
@@ -17,4 +19,15 @@ void main(List<String> arguments) {
   print(family.length);
   print(family.codeUnits.length);
   print(family.runes.length);
+  print(family.characters);
+  print(family.characters.length);
+
+  // string concatenation
+  const concatenation = 'concatenation';
+  final message = StringBuffer();
+  message.write('This');
+  message.write(' is more ');
+  message.write('effective $concatenation ');
+  message.write('than + or +=.');
+  print(message.toString());
 }
