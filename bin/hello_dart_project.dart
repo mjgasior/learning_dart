@@ -1,31 +1,20 @@
-import 'dart:math';
-
 void main(List<String> arguments) {
-  final angle = sin(45);
-  print(angle is String);
-  print(angle is num);
-  print(angle.round() is num);
-
-  final int roundedAngle = angle.toInt();
-  print(roundedAngle);
-
-  final actuallyDouble = 3.toDouble();
-  print(actuallyDouble is double);
-
-  final double actuallyDouble2 = 3;
-  print(actuallyDouble2 is double);
-
-  final double actuallyDouble3 = 3.0;
-  print(actuallyDouble3 is double);
-
-  // casting
-  const num theNumber = 3;
-  final convert = theNumber as int;
-  print(convert.isEven); // num does not have the isEven method
-
-  // strings
   const notSurrogatePair = 'a';
   print(notSurrogatePair.codeUnits);
+  print(notSurrogatePair.runes);
   const surrogatePair = '🎯';
   print(surrogatePair.codeUnits);
+  print(surrogatePair.runes); // runes represent the whole surrogate value
+
+  // unicode grapheme clusters
+  const family = '👨‍👩‍👧‍👦';
+  print(family.runes);
+  /*
+    a rune for clusters of emojis will still be a list of values
+    the family emoji is a cluster of woman, man, girl and boy emojis
+    glued with Zero Width Joiner or ZWJ
+  */
+  print(family.length);
+  print(family.codeUnits.length);
+  print(family.runes.length);
 }
