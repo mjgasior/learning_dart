@@ -32,3 +32,7 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * raw strings that ignore characters like `\n` are annotated with `r`, for example - `r'the \n the string'`
 * a declared `var` without initialization will be defaulted to `dynamic` type
 * `Object?` and `dynamic` are almost the same - use `Object?` to say that you want this type to be not strict and use `dynamic` when you don't know what the type is 
+
+## Chapter 4
+
+* in *boolean* operators precedence, the `!` is first, greater/smaller (or equal) symbols are next, `==` and `!=` equality symbols afterwards
