@@ -22,4 +22,10 @@ void main(List<String> arguments) {
   const num theNumber = 3;
   final convert = theNumber as int;
   print(convert.isEven); // num does not have the isEven method
+
+  // strings
+  const notSurrogatePair = 'a';
+  print(notSurrogatePair.codeUnits);
+  const surrogatePair = '🎯';
+  print(surrogatePair.codeUnits);
 }

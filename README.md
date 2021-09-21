@@ -24,3 +24,4 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * conversions need to be explicit, that is why there is for example `.toInt()` and `.toDouble()` methods
 * `num` type does not have `isEven` method
 * you can't cast `double` to `int` and vice versa - you should use the dedicated methods for conversion
+* UTF-16 has a special way of encoding code points higher than 65,536 by using two code units called surrogate pairs
