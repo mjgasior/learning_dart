@@ -15,4 +15,6 @@ tab unsafe!
 
   print(r'raw \n string');
   print('not raw \n string');
+
+  print('I love \u{1F3AF}');
 }

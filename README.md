@@ -29,4 +29,6 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * **Zero Width Joiner** or **ZWJ** is a character that allows to create clusters of emojis (*Unicode extended grapheme cluster*)
 * string interpolation works with `$`, but if a function is necessary, use it with braces - `${ }`
 * multiline strings are defined with `'''`
-* raw strings that ignore characters like `\n` are annotated with `r`, for example - `r'the \n the string'` 
+* raw strings that ignore characters like `\n` are annotated with `r`, for example - `r'the \n the string'`
+* a declared `var` without initialization will be defaulted to `dynamic` type
+* `Object?` and `dynamic` are almost the same - use `Object?` to say that you want this type to be not strict and use `dynamic` when you don't know what the type is 
