@@ -27,3 +27,6 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * UTF-16 has a special way of encoding code points higher than 65,536 by using two code units called surrogate pairs
 * Dart uses `runes` to represent the Unicode values of surrogate pairs as one
 * **Zero Width Joiner** or **ZWJ** is a character that allows to create clusters of emojis (*Unicode extended grapheme cluster*)
+* string interpolation works with `$`, but if a function is necessary, use it with braces - `${ }`
+* multiline strings are defined with `'''`
+* raw strings that ignore characters like `\n` are annotated with `r`, for example - `r'the \n the string'` 
