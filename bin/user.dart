@@ -1,4 +1,6 @@
 class User {
+  User(this.id, this.name);
+
   String name = '';
   int id = 0;
 
