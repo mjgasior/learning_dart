@@ -1,10 +1,7 @@
 class User {
   User(this.id, this.name);
 
-  User.anonymous() {
-    id = 0;
-    name = 'anonymous';
-  }
+  User.anonymous() : this(11, 'anonymous');
 
   String name = '';
   int id = 0;
