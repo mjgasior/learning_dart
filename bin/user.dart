@@ -1,10 +1,10 @@
 class User {
-  User(this._id, this._name);
+  User({int id = 0, String name = 'anonymous'})
+      : _id = id,
+        _name = name;
 
-  User.anonymous() : this(11, 'anonymous');
-
-  String _name = '';
-  int _id = 0;
+  final String _name;
+  final int _id;
 
   String toJson() {
     return '{"id":$_id,"name":"$_name"}';
