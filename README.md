@@ -2,13 +2,13 @@
 
 This repo is based on lessons leared through the book *Dart Apprentice* by **Jonathan Sande** and **Matt Galloway**.
 
-## Chapter 1
+## Chapter 1: Hello, Dart!
 
 * to run the app run `dart run .\bin\hello_dart_project.dart`
 * to bootstrap a new app run `dart create project_name` (Dart syntax needs underscore separators)
 * to set up the VSC debugger you need `launch.json` file defined
 
-## Chapter 2
+## Chapter 2: Expressions, Variables & Constants
 
 * comments work as usually with `//` and `/* ... */`
 * Dart also has documentation comments using `///` and `/** * */` notation
@@ -18,7 +18,7 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * there is `dynamic` type that can get everything (but it is not recommended to be used)
 * `var` type assigns the type based on what value is being assigned to the variable
 
-## Chapter 3
+## Chapter 3: Types & Operations
 
 * `double` and `int` are subtypes of `num`
 * conversions need to be explicit, that is why there is for example `.toInt()` and `.toDouble()` methods
@@ -33,9 +33,9 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * a declared `var` without initialization will be defaulted to `dynamic` type
 * `Object?` and `dynamic` are almost the same - use `Object?` to say that you want this type to be not strict and use `dynamic` when you don't know what the type is 
 
-## Chapter 4
+## Chapter 4: Control Flow
 
-* in *boolean* operators precedence, the `!` is first, greater/smaller (or equal) symbols are next, `==` and `!=` equality symbols afterwards
+* in *boolean* operators precedence, the `!` is first, greater/less (or equal) symbols are next, `==` and `!=` equality symbols afterwards
 * Dart has *ternary operators* but keep in mind that:
 
 > The ternary conditional operator makes basic if-else statements much more compact, which in turn can make your code more readable.
@@ -44,3 +44,9 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 
 * adding a comma after the last item in *enum* type formats the list vertically - to keep it horizontal, remove the last comma (works with other lists too)
 * Dart has `for-in` loops for going through collections and `for-each` loops that can be invoked directly on the collection object
+
+## Chapter 5: Functions
+
+> It’s easy to get the words parameter and argument mixed up. A parameter is the name and type that you define as an input for your function. An argument, on the other hand, is the actual value that you pass in. A parameter is abstract, while an argument is concrete.
+
+* optional parameters are declared with square braces like `[String? name]`
