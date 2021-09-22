@@ -1,17 +1,17 @@
 class User {
-  User(this.id, this.name);
+  User(this._id, this._name);
 
   User.anonymous() : this(11, 'anonymous');
 
-  String name = '';
-  int id = 0;
+  String _name = '';
+  int _id = 0;
 
   String toJson() {
-    return '{"id":$id,"name":"$name"}';
+    return '{"id":$_id,"name":"$_name"}';
   }
 
   @override
   String toString() {
-    return 'User(id: $id, name: $name)';
+    return 'User(id: $_id, name: $_name)';
   }
 }

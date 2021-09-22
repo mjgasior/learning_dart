@@ -64,3 +64,5 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * there are *long form* and *short form* constructors in Dart
 * Dart has also *named constructors* which allow to create a different type of constructor for the same class
 * a *named constructor* can be simplified by *forwarding constructor*, that is, refering to other constructors
+* one can also add optional and named parameters to constructors
+* private variables are created by adding underscore before the name - for example `_name`
