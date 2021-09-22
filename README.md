@@ -51,3 +51,7 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 
 * optional parameters are declared with square braces like `[String? name]` and can have a default value like `[String name = 'Mike']`
 * named parameters are created with curly braces like `{ required String name, int age = 20 }` - add a `required` keyword to make that parameter not optional
+
+## Chapter 6: Classes
+
+* from Dart 2.0 the `new` keyword for class instance creation is optional and actually should not be used
