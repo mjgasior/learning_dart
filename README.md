@@ -66,4 +66,6 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * a *named constructor* can be simplified by *forwarding constructor*, that is, refering to other constructors
 * one can also add optional and named parameters to constructors
 * private variables are created by adding underscore before the name - for example `_name`
+* the underscored variables are only **library** private, not **class** private
 * named parameters can’t start with an underscore so if you have private variables initialized in a constructor, you need to map them, for example `User({int id = 0}) : _id = id;`
+* the *initializer lists* can also have **assertions** of the arguments, but then you need to run the `--enable-asserts` argument (`dart run --enable-asserts`)

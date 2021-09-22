@@ -1,6 +1,7 @@
 class User {
-  User({int id = 0, String name = 'anonymous'})
-      : _id = id,
+  User({int id = 1, String name = 'anonymous'})
+      : assert(id > 0),
+        _id = id,
         _name = name;
 
   final String _name;
