@@ -1,26 +1,9 @@
-enum Weather { cloudy, rainy, sunny }
+import 'dart:math';
 
 void main(List<String> arguments) {
-  const result = 1 / 3;
-  print('The result is $result');
-  print('The result is ${result.toStringAsFixed(3)}');
-
-  const multiline = '''
-    this might
-    not
-      be
-      even
-        true!
-tab unsafe!
-  ''';
-  print(multiline);
-
-  print(r'raw \n string');
-  print('not raw \n string');
-
-  print('I love \u{1F3AF}');
-
-  const weather = Weather.rainy;
-  print(Weather.cloudy);
-  print(weather.index);
+  final random = Random();
+  while (random.nextInt(6) + 1 != 6) {
+    print('Not a six!');
+  }
+  print('Finally, you got a six!');
 }

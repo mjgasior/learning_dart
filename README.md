@@ -38,10 +38,8 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * in *boolean* operators precedence, the `!` is first, greater/smaller (or equal) symbols are next, `==` and `!=` equality symbols afterwards
 * Dart has *ternary operators* but keep in mind that:
 
-```
-The ternary conditional operator makes basic if-else statements much more compact, which in turn can make your code more readable.
-
-However, for situations where using this operator makes your code less readable, then stick with the full if-else statement. Readability is always more important than fancy programming tricks that give the same result.
-```
+> The ternary conditional operator makes basic if-else statements much more compact, which in turn can make your code more readable.
+> 
+> However, for situations where using this operator makes your code less readable, then stick with the full if-else statement. Readability is always more important than fancy programming tricks that give the same result.
 
 * adding a comma after the last item in *enum* type formats the list vertically - to keep it horizontal, remove the last comma (works with other lists too)
