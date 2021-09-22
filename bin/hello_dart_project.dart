@@ -1,3 +1,5 @@
+enum Weather { cloudy, rainy, sunny }
+
 void main(List<String> arguments) {
   const result = 1 / 3;
   print('The result is $result');
@@ -17,4 +19,8 @@ tab unsafe!
   print('not raw \n string');
 
   print('I love \u{1F3AF}');
+
+  const weather = Weather.rainy;
+  print(Weather.cloudy);
+  print(weather.index);
 }
