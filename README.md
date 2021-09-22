@@ -62,3 +62,4 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 > In Dart the convention is to put the constructor before the property variables.
 
 * there are *long form* and *short form* constructors in Dart
+* Dart has also *named constructors* which allow to create a different type of constructor for the same class
