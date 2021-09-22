@@ -54,4 +54,7 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 
 ## Chapter 6: Classes
 
+> In Dart naming conventions, acronyms are treated as words. Thus, toJson is a better name than toJSON.
+
 * from Dart 2.0 the `new` keyword for class instance creation is optional and actually should not be used
+* you can initialize classes with data with *cascade notation* which uses `..` symbol
