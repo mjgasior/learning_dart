@@ -43,3 +43,4 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 > However, for situations where using this operator makes your code less readable, then stick with the full if-else statement. Readability is always more important than fancy programming tricks that give the same result.
 
 * adding a comma after the last item in *enum* type formats the list vertically - to keep it horizontal, remove the last comma (works with other lists too)
+* Dart has `for-in` loops for going through collections and `for-each` loops that can be invoked directly on the collection object
