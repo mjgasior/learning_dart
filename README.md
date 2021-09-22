@@ -50,4 +50,4 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 > It’s easy to get the words parameter and argument mixed up. A parameter is the name and type that you define as an input for your function. An argument, on the other hand, is the actual value that you pass in. A parameter is abstract, while an argument is concrete.
 
 * optional parameters are declared with square braces like `[String? name]` and can have a default value like `[String name = 'Mike']`
-* named parameters are created with curly braces like `{ String name }`
+* named parameters are created with curly braces like `{ required String name, int age = 20 }` - add a `required` keyword to make that parameter not optional
