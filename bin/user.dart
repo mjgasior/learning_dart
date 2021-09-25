@@ -19,8 +19,6 @@ class User {
         _name = json['name'] as String;
 
   final String _name;
-  String get name => _name;
-
   final int _id;
 
   String toJson() {

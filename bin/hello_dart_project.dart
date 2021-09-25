@@ -11,7 +11,9 @@ void main() {
   print(user.toJson());
 
   final address = Address('street', 55);
-  print(address.number);
+  print(address.street);
+  address.street = 'Puszkarska';
+  print(address.street);
 
   final ray = User.ray();
   print(ray);
@@ -19,5 +21,4 @@ void main() {
   final map = {'id': 10, 'name': 'Manda'};
   final manda = User.fromJson(map);
   print(manda);
-  print(manda.name);
 }
