@@ -19,4 +19,5 @@ void main() {
   final map = {'id': 10, 'name': 'Manda'};
   final manda = User.fromJson(map);
   print(manda);
+  print(manda.name);
 }

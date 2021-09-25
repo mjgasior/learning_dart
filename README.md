@@ -80,3 +80,5 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 > factory constructor is basically a special method that starts with the factory keyword and returns an object of the class type
 
 > the factory constructor body allows you to perform some work before returning the new object, without exposing the inner wiring of that instantiation process to whoever is using the class
+
+> Using a factory constructor over a named constructor can also help to prevent breaking changes for subclasses of your class.
