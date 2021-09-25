@@ -12,4 +12,11 @@ void main() {
 
   final address = Address('street', 55);
   print(address.number);
+
+  final ray = User.ray();
+  print(ray);
+
+  final map = {'id': 10, 'name': 'Manda'};
+  final manda = User.fromJson(map);
+  print(manda);
 }
