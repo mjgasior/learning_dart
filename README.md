@@ -69,3 +69,6 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * the underscored variables are only **library** private, not **class** private
 * named parameters can’t start with an underscore so if you have private variables initialized in a constructor, you need to map them, for example `User({int id = 0}) : _id = id;`
 * the *initializer lists* can also have **assertions** of the arguments, but then you need to run the `--enable-asserts` argument (`dart run --enable-asserts`)
+* add `const` keyword in front of the constructor to make the class immutable
+
+> In addition to being immutable, another benefit of const variables is that they’re **canonical instances**, which means that no matter how many instances you create, as long as the properties used to create them are the same, Dart will only see a single instance.
