@@ -114,3 +114,13 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * there is no *type promotion* for non-local variables - if you use a variable in a method that has a bigger scope, it cannot be assured that its value won't change in between null-check and usage - one can solve it with the *bang operator* or *shadowing* (assign the nullable variable to a local one first)
 
 > Using `late` means that Dart doesn’t initialize the variable right away. It only initializes it when you access it the first time. This is also known as **lazy initialization**. It’s like procrastination for variables.
+
+> using `late` means that you’re promising Dart that you’ll initialize the field before it’s ever used. This moves checking from compile-time to runtime
+
+* **lazy initialization** is never done until you actually use the variable so it is of great benefit when an initialization needs heavy calculations
+
+## Chapter 8: Collections
+
+* a list with `final` only keeps the reference to the list immutable, but allows manipulation - **deeply immutable lists** are created with `const` keyword - this does not allow any operation on a list
+* you can also have a constant list initialized in runtime with `final` variable and `const` list (for example `final x = const ['a']`)
+* runtime initialized constant list can be also created with a special constructor - `List.unmodifiable` 

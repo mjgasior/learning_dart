@@ -25,4 +25,10 @@ void main() {
 
   List<int>? myList = [1, 2, 3];
   print(myList?[2]);
+
+  var desserts = ['cookies', 'cupcakes', 'donuts', 'pie'];
+  var snacks = <String>[];
+
+  print(desserts);
+  print(snacks);
 }
