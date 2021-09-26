@@ -100,11 +100,11 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * **type promotion** is a thing where if you assign early a value to a *nullable* type instance, it will not be treated as if it might be of `null` value and the compiler will *promote* it to a *non-nullable* type - it works also for more complicated situations through the process of **flow analysis**
 
 * null operators in Dart:
-** if-null operator (??)
-** null-aware assignment operator (??=)
-** null-aware access operator (?.)
-** null-aware method invocation operator (?.)
-** null assertion operator (!)
-** null-aware cascade operator (?..)
-** null-aware index operator (?[])
-** null-aware spread operator (...?)
+    * if-null operator (??)
+    * null-aware assignment operator (??=)
+    * null-aware access operator (?.)
+    * null-aware method invocation operator (?.)
+    * null assertion operator (!)
+    * null-aware cascade operator (?..)
+    * null-aware index operator (?[])
+    * null-aware spread operator (...?)

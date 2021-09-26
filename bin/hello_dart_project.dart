@@ -11,4 +11,9 @@ void main() {
 
   final singleton = MySingleton.instance;
   print(singleton);
+
+  double? fontSize;
+  print(fontSize);
+  fontSize ??= 20.5;
+  print(fontSize);
 }
