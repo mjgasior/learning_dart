@@ -86,3 +86,25 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * you can achieve the **singleton** design pattern by utilizing the *factory constructor*
 
 > Factory constructors in many ways are just like static methods, but there are a few differences
+
+## Chapter 7: Nullability
+
+> Starting with version 2.12, Dart separated its types into nullable and non-nullable. Nullable types end with a question mark (?) while non-nullable types do not.
+
+> Dart types are non-nullable by default. That means they’re guaranteed to never contain the value null, which is the essence of the meaning of sound in the phrase “sound null safety”. 
+
+* type without a question mark could be null if you use the `late` keyword, but technically this is opting out of sound *null safety*
+
+> The non-nullable type is a subtype of its nullable form. For example, `String` is a subtype of `String?` since `String?` can be a `String`.
+
+* **type promotion** is a thing where if you assign early a value to a *nullable* type instance, it will not be treated as if it might be of `null` value and the compiler will *promote* it to a *non-nullable* type - it works also for more complicated situations through the process of **flow analysis**
+
+* null operators in Dart:
+** if-null operator (??)
+** null-aware assignment operator (??=)
+** null-aware access operator (?.)
+** null-aware method invocation operator (?.)
+** null assertion operator (!)
+** null-aware cascade operator (?..)
+** null-aware index operator (?[])
+** null-aware spread operator (...?)
