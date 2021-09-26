@@ -123,4 +123,6 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 
 * a list with `final` only keeps the reference to the list immutable, but allows manipulation - **deeply immutable lists** are created with `const` keyword - this does not allow any operation on a list
 * you can also have a constant list initialized in runtime with `final` variable and `const` list (for example `final x = const ['a']`)
-* runtime initialized constant list can be also created with a special constructor - `List.unmodifiable` 
+* runtime initialized constant list can be also created with a special constructor - `List.unmodifiable`
+
+> The Flutter framework chose Dart because of its unique characteristics. However, Flutter has also influenced the development of Dart. One area you can see this is with the addition of the **spread operator**, **collection if** and **collection for**.

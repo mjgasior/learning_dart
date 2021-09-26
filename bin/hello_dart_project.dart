@@ -1,34 +1,31 @@
-import 'email.dart';
-import 'my_singleton.dart';
-import 'user.dart';
-
 void main() {
-  final user = User(id: 1, name: "Mike");
-  print(user);
+  var list = ['a', 'b', 'c'];
+  print(list.first);
+  print(list.last);
 
-  final email = Email('mike@${Email.domain}');
-  print(email.value);
+  // spread operator
+  var list2 = ['d', 'e', 'f'];
+  print([...list, ...list2]);
 
-  final singleton = MySingleton.instance;
-  print(singleton);
+  List<String>? coffees;
+  final hotDrinks = ['milk tea', ...?coffees];
+  print(hotDrinks);
 
-  double? fontSize;
-  print(fontSize);
-  fontSize ??= 20.5;
-  print(fontSize);
+  // collection if
+  const peanutAllergy = true;
 
-  int? age;
-  print(age?.toDouble());
+  const candy = [
+    'Junior Mints',
+    'Twizzlers',
+    if (!peanutAllergy) 'Reeses',
+  ];
+  print(candy);
 
-  double labelFontSize = fontSize!;
-  print(labelFontSize);
-
-  List<int>? myList = [1, 2, 3];
-  print(myList?[2]);
-
-  var desserts = ['cookies', 'cupcakes', 'donuts', 'pie'];
-  var snacks = <String>[];
-
-  print(desserts);
-  print(snacks);
+  // collection for
+  const deserts = ['gobi', 'sahara', 'arctic'];
+  var bigDeserts = [
+    'ARABIAN',
+    for (var desert in deserts) desert.toUpperCase(),
+  ];
+  print(bigDeserts);
 }
