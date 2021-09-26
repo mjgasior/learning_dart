@@ -1,32 +1,21 @@
 class User {
-  const User({int id = 1, String name = 'anonymous'})
-      : assert(id > 0),
-        _id = id,
-        _name = name;
+  const User({this.id = _anonymousId, this.name = _anonymousName})
+      : assert(id >= 0);
 
-  factory User.ray() {
-    return User(id: 55, name: 'Ray');
-  }
+  const User.anonymous() : this();
 
-  factory User.fromJson(Map<String, Object> json) {
-    final userId = json['id'] as int;
-    final userName = json['name'] as String;
-    return User(id: userId, name: userName);
-  }
+  final String name;
+  final int id;
 
-  User.fromJson2(Map<String, Object> json)
-      : _id = json['id'] as int,
-        _name = json['name'] as String;
-
-  final String _name;
-  final int _id;
+  static const _anonymousId = 0;
+  static const _anonymousName = 'anonymous';
 
   String toJson() {
-    return '{"id":$_id,"name":"$_name"}';
+    return '{"id":$id,"name":"$name"}';
   }
 
   @override
   String toString() {
-    return 'User(id: $_id, name: $_name)';
+    return 'User(id: $id, name: $name)';
   }
 }

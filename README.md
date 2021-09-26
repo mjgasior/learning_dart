@@ -82,3 +82,7 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 > the factory constructor body allows you to perform some work before returning the new object, without exposing the inner wiring of that instantiation process to whoever is using the class
 
 > Using a factory constructor over a named constructor can also help to prevent breaking changes for subclasses of your class.
+
+* you can achieve the **singleton** design pattern by utilizing the *factory constructor*
+
+> Factory constructors in many ways are just like static methods, but there are a few differences
