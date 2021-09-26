@@ -16,4 +16,10 @@ void main() {
   print(fontSize);
   fontSize ??= 20.5;
   print(fontSize);
+
+  int? age;
+  print(age?.toDouble());
+
+  double labelFontSize = fontSize!;
+  print(labelFontSize);
 }

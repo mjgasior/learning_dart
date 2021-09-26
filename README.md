@@ -102,9 +102,9 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * null operators in Dart:
     * if-null operator (??)
     * null-aware assignment operator (??=)
-    * null-aware access operator (?.)
+    * null-aware access operator (?.) or null-aware method invocation operator
     * null-aware method invocation operator (?.)
-    * null assertion operator (!)
+    * null assertion operator (!) or bang operator 
     * null-aware cascade operator (?..)
     * null-aware index operator (?[])
     * null-aware spread operator (...?)
