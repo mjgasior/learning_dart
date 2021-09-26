@@ -108,3 +108,9 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
     * null-aware cascade operator (?..)
     * null-aware index operator (?[])
     * null-aware spread operator (...?)
+
+> When you create an object from a class, Dart requires you to initialize any non-nullable member variables before you use them.
+
+* there is no *type promotion* for non-local variables - if you use a variable in a method that has a bigger scope, it cannot be assured that its value won't change in between null-check and usage - one can solve it with the *bang operator* or *shadowing* (assign the nullable variable to a local one first)
+
+> Using `late` means that Dart doesn’t initialize the variable right away. It only initializes it when you access it the first time. This is also known as **lazy initialization**. It’s like procrastination for variables.

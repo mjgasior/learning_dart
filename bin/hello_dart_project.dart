@@ -22,4 +22,7 @@ void main() {
 
   double labelFontSize = fontSize!;
   print(labelFontSize);
+
+  List<int>? myList = [1, 2, 3];
+  print(myList?[2]);
 }
