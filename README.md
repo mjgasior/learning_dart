@@ -130,3 +130,6 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * `sets` in contrast to `lists` do not allow duplications
 * `maps` in Dart hold **key-value** pairs
 * `final something = {};` actually returns a `Map<dynamic, dynamic>` because historically `map` literals were created before `set` literals in Dart
+* you can't use *for-in* loop for a `Map` in a straightforward way, but you can iterate through its keys to achieve the same effect
+
+> `Iterable` is a type that knows how to move sequentially, or iterate, over its elements. `List` and `Set` both implement `Iterable`, but `Map` does not.
