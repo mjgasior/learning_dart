@@ -29,6 +29,24 @@ void main() {
   ];
   print(bigDeserts);
 
-  final Set<int> someSetA = {};
-  final someSetB = <int>{};
+  final someSetA = <int>{1, 2, 3, 2, 1};
+  // the duplications are automatically removed do to the character of a set
+  print(someSetA);
+
+  print("Operations");
+  final Set<int> someSetB = {1, 2, 3};
+  print(someSetB.contains(1));
+  print(someSetB.contains(99));
+
+  someSetB.add(99);
+  print(someSetB.contains(99));
+  someSetB.addAll([1, 2, 3, 4, 5]);
+  print(someSetB);
+
+  someSetB.remove(1);
+  print(someSetB);
+
+  print("Intersection and unions");
+  print(someSetB.intersection(someSetA));
+  print(someSetB.union(someSetA));
 }

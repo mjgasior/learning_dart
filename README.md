@@ -126,3 +126,5 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * runtime initialized constant list can be also created with a special constructor - `List.unmodifiable`
 
 > The Flutter framework chose Dart because of its unique characteristics. However, Flutter has also influenced the development of Dart. One area you can see this is with the addition of the **spread operator**, **collection if** and **collection for**.
+
+* `sets` in contrast to `lists` do not allow duplications
