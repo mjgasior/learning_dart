@@ -28,4 +28,7 @@ void main() {
     for (var desert in deserts) desert.toUpperCase(),
   ];
   print(bigDeserts);
+
+  final Set<int> someSetA = {};
+  final someSetB = <int>{};
 }
