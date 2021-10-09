@@ -19,8 +19,14 @@ void main() {
     ),
   );
 
-  final desserts = ['cookies', 'pie', 'donuts', 'brownies'];
+  final desserts = ['cookies', 'pie', 'cake', 'donuts', 'candy', 'brownies'];
   desserts.sort();
   print(desserts);
   print(desserts.reversed);
+
+  desserts.sort((d1, d2) => d1.length.compareTo(d2.length));
+  print(desserts);
+  print(desserts
+      .where((dessert) => dessert.length > 5)
+      .map((dessert) => dessert.toUpperCase()));
 }

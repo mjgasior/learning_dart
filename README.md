@@ -137,3 +137,5 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * when you `print` a `List` you have square braces, `Set` and `Map` have curly braces and `Iterable` uses round braces
 
 > If you try to call `reduce` on an empty list, you’ll get an error. For that reason, using `fold` may be more reliable when a collection has a possibility of containing zero elements. The `fold` method works like `reduce`, but it takes an extra parameter that provides the function with a starting value.
+
+* **lists** are good when order matters, **sets** are fast in search (as in search by `key` in **maps**)
