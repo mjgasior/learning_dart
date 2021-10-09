@@ -20,4 +20,9 @@ void main() {
   }
 
   mapC.forEach((key, value) => print('$key -> $value'));
+
+  // Higher order methods
+  const table = [1, 2, 3, 4, 5];
+  final result = table.map((number) => number * number);
+  print(result);
 }
