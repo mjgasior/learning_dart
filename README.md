@@ -133,3 +133,5 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * you can't use *for-in* loop for a `Map` in a straightforward way, but you can iterate through its keys to achieve the same effect
 
 > `Iterable` is a type that knows how to move sequentially, or iterate, over its elements. `List` and `Set` both implement `Iterable`, but `Map` does not.
+
+* when you `print` a `List` you have square braces, `Set` and `Map` have curly braces and `Iterable` uses round braces
