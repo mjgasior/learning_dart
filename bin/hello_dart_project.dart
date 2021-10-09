@@ -11,4 +11,16 @@ void main() {
   print(result.toList());
 
   print(table.where((number) => number.isEven));
+  print(table.reduce((sum, number) => sum + number));
+  print(
+    table.fold<int>(
+      0,
+      (int sum, int number) => sum + number,
+    ),
+  );
+
+  final desserts = ['cookies', 'pie', 'donuts', 'brownies'];
+  desserts.sort();
+  print(desserts);
+  print(desserts.reversed);
 }
