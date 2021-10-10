@@ -1,3 +1,10 @@
+import 'person.dart';
+import 'student.dart';
+
 void main() {
-  // classes
+  final johnny = Person('Johnny', 'Kelly');
+  print(johnny.fullName);
+
+  final pete = Student('Peter', 'Steele');
+  print(pete.fullName);
 }

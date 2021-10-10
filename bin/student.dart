@@ -5,4 +5,7 @@ class Student extends Person {
   Student(String givenName, String surname) : super(givenName, surname);
 
   var grades = <Grade>[];
+
+  @override
+  String get fullName => '$surname, $givenName';
 }
