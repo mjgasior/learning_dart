@@ -8,4 +8,9 @@ class Student extends Person {
 
   @override
   String get fullName => '$surname, $givenName';
+
+  @override
+  String uppercaseSurname() {
+    return givenName.toUpperCase();
+  }
 }
