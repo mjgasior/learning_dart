@@ -143,3 +143,10 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 ## Chapter 9: Advanced Classes
 
 > `Object?` can be considered in practice to be the root of the type system
+
+* there are *abstract* classes and *interfaces* in Dart but there is not `interface` keyword - that is why *abstract* classes without logic are being used as *interfaces*
+
+> Note that **repository** is a common term to call an `interface` that hides the details of how data is stored and retrieved.
+
+* that is why an `interface` can be named `abstract class DataRepository` 
+* if an **abstract** class is used as an **interface** you don't use it with the `extends` keyword but `implements`

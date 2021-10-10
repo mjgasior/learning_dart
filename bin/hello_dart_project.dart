@@ -18,4 +18,7 @@ void main() {
   print(josh is Student);
   print(josh is SchoolBandMember);
   print(josh is! StudentAthlete);
+
+  print(kenny.uppercaseSurname());
+  print(kenny.uppercaseFullName());
 }
