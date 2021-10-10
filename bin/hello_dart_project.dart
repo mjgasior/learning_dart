@@ -1,3 +1,4 @@
+import 'names_repository.dart';
 import 'person.dart';
 import 'school_band_member.dart';
 import 'student.dart';
@@ -21,4 +22,12 @@ void main() {
 
   print(kenny.uppercaseSurname());
   print(kenny.uppercaseFullName());
+
+  // bad:
+  final NamesRepository slavojBad = Student("Slavoj", "Žižek");
+  print(slavojBad.uppercaseFullName());
+
+  // good
+  final slavojGood = NamesRepository("Slavoj", "Žižek");
+  print(slavojGood.uppercaseFullName());
 }
