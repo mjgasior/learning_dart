@@ -5,4 +5,5 @@ abstract class NamesRepository {
       Student(givenName, surname);
 
   String uppercaseFullName();
+  void meetAndGreet();
 }

@@ -30,4 +30,5 @@ void main() {
   // good
   final slavojGood = NamesRepository("Slavoj", "Žižek");
   print(slavojGood.uppercaseFullName());
+  slavojGood.meetAndGreet();
 }
