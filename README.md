@@ -152,3 +152,4 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * if an **abstract** class is used as an **interface** you don't use it with the `extends` keyword but `implements`
 * if you want to use a fake implementation, add a `factory` constructor to the `abstract class` interface
 * a package called `get_it` is a good **service locator** in Dart that helps with **dependency injection**
+* anonymous Dart extensions (those without a name) are only visible to the file where they are in
