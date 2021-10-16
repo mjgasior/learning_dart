@@ -153,3 +153,11 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 * if you want to use a fake implementation, add a `factory` constructor to the `abstract class` interface
 * a package called `get_it` is a good **service locator** in Dart that helps with **dependency injection**
 * anonymous Dart extensions (those without a name) are only visible to the file where they are in
+
+## Chapter 10: Asynchronous Programming
+
+* asynchronus operations can be handled either by chaining with `.then()` or with regular `async/await`
+
+# Resources:
+
+* [5 Plugins That I Use in Every Flutter Project](https://blog.devgenius.io/5-plugins-that-i-use-in-every-flutter-project-ab2f3dc1bfc2)
