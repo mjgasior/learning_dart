@@ -1,11 +1,28 @@
+import 'dart:convert';
+import 'dart:io';
+import 'package:http/http.dart' as http;
+
+import 'todo.dart';
+
 Future<void> main() async {
-  print('Before the future');
-
-  final value = await Future<int>.delayed(
-    Duration(seconds: 1),
-    () => 42,
-  );
-  print('Value: $value');
-
-  print('After the future');
+  try {
+    final url = 'https://jsonplaceholder.typicode.com/todos/1';
+    final parsedUrl = Uri.parse(url);
+    final response = await http.get(parsedUrl);
+    final statusCode = response.statusCode;
+    if (statusCode == 200) {
+      final rawJsonString = response.body;
+      final jsonMap = jsonDecode(rawJsonString);
+      final todo = Todo.fromJson(jsonMap);
+      print(todo);
+    } else {
+      throw HttpException('$statusCode');
+    }
+  } on SocketException catch (error) {
+    print(error);
+  } on HttpException catch (error) {
+    print(error);
+  } on FormatException catch (error) {
+    print(error);
+  }
 }
