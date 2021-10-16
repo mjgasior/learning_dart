@@ -160,6 +160,10 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 
 > Dart has both an `Exception` type and an `Error` type. The words exception and error are often used interchangeably, but an `Exception` is something that you should expect and handle in the catch block. However, an `Error` is the result of a programming mistake. You should let the error crash your app as a sign that you need to fix whatever caused the error.
 
+> When you read a file as a *stream*, it reads the file in chunks. The size of the chunks depends on how Dart is implemented on the system you’re using, but it’s probably 65,536 bytes per chunk as it was on the local machines used when writing this chapter. 
+
+> By default, only a single object can listen to a *stream*. This is known as a **single subscription stream**. If you want more than one object to be notified of stream events, you need to create a **broadcast stream**, which you could do like so: `final broadcastStream = stream.asBroadcastStream();`
+
 # Resources:
 
 * [5 Plugins That I Use in Every Flutter Project](https://blog.devgenius.io/5-plugins-that-i-use-in-every-flutter-project-ab2f3dc1bfc2)
