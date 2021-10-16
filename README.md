@@ -164,6 +164,8 @@ This repo is based on lessons leared through the book *Dart Apprentice* by **Jon
 
 > By default, only a single object can listen to a *stream*. This is known as a **single subscription stream**. If you want more than one object to be notified of stream events, you need to create a **broadcast stream**, which you could do like so: `final broadcastStream = stream.asBroadcastStream();`
 
+* you can set a flag `cancelOnError` if you want to break the *stream* on an error
+
 # Resources:
 
 * [5 Plugins That I Use in Every Flutter Project](https://blog.devgenius.io/5-plugins-that-i-use-in-every-flutter-project-ab2f3dc1bfc2)
